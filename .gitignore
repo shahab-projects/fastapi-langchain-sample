@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -172,3 +173,15 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+=======
+# Ignore virtual environment
+venv/
+
+# Ignore API keys
+.env
+
+# Ignore cache & compiled files
+__pycache__/
+*.pyc
+*.pyo
+>>>>>>> eb5d5e9 (Initial commit: FastAPI LangChain sample)
