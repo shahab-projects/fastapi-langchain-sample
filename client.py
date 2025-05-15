@@ -13,7 +13,7 @@ load_dotenv()
 #    print(f"{key}: {value}")
     
 api_key = os.getenv('OPENAI_API_KEY')
-print('OPENAI_API_KEY', api_key)  # Check if the key is loaded properly
+# print('OPENAI_API_KEY', api_key)  # Check if the key is loaded properly
 
 # print(response.json()['output']['content'])
 """
@@ -41,7 +41,7 @@ response = requests.post(
 if response.status_code == 200:
     if response.headers.get('Content-Type') == 'application/json':
         try:
-            data = response.json()
+            data = response.json()['output']['content']
             print(data)
         except requests.exceptions.JSONDecodeError:
             print("Response is not a valid JSON")
