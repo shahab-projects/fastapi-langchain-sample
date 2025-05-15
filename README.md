@@ -27,6 +27,7 @@ source venv/bin/activate  # or .\venv\Scripts\activate on Windows
 
 # Run the FastAPI app
 python app.py
+```
 
 ## 📋 Sample Output
 
